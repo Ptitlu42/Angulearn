@@ -2,9 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template:`
+  <app-layout-core>
+    <div>
+      <button>Liste des héros</button>
+      <button>Détails d'un héros</button>
+    </div>
+  </app-layout-core>
+  `,
 })
+
 export class AppComponent {
   title = 'angulearn';
 }
